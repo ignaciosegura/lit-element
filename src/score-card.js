@@ -25,7 +25,7 @@ export class ScoreCard extends LitElement {
 
             button {
               display: inline-block;
-              width: 30px;
+              width: 80px;
               height: 30px;
               border-radius: 5px;
               background-color: green;
@@ -48,9 +48,12 @@ export class ScoreCard extends LitElement {
   }
 
   render () {
+    let buttonText = this.score === 0
+      ? 'Click me'
+      : this.score + ' click';
     return html`
       <h2>${this.name}</h2>
-      <button @click="${this.handleClick}">${this.score}</button>
+      <button @click="${this.handleClick}">${buttonText}</button>
       <score-display score="${this.score}"></score-display>
       <scrambler-tag interval="3"></scrambler-tag>
   `;
