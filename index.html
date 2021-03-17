@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Put your description here.">
+  <base href="/">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #ededed;
+    }
+  </style>
+  <title>Lit-Element and Web Component test</title>
+  <script type="module" src="./src/my-lit-element.js"></script>
+  <script type="module" src="./src/score-card.js"></script>
+</head>
+
+<body>
+  <my-lit-element title="Count!"></my-lit-element>
+
+  <score-card name='Score 1'></score-card>
+  <score-card name='Score 2'></score-card>
+
+</body>
+
+</html>
